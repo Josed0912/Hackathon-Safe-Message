@@ -1,0 +1,182 @@
+.description{
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5;
+    padding: 0 200px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
+
+}
+.title
+{
+    font-family: Roboto, sans-serif;
+    font-size: 3em;
+    color: #36c69b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  textarea {
+    width: 80%;
+    min-height: 100px; /* Minimum height to start with */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none; /* Disable manual resizing */
+    outline: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #36c69b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #36c69bbd;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Black.ttf') format('woff2'),
+         url('../fonts/Roboto/Roboto-Regular.ttf') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .appBody{
+    max-width: 80%;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 100px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  body{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .scrollable-grid {
+    max-height: 300px; /* Set the maximum height for the scrollable grid */
+    overflow: auto;   /* Enable scrolling when content overflows */
+  }
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Only one column for a vertical grid */
+  gap: 10px; /* Define the gap between grid items */
+  padding: 10px; /* Add padding for spacing */
+}
+  
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.item-column {
+  display: inline-block;
+  width: 40%; /* Adjust the width as needed */
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.last-column {
+  width: 40%;
+   /* Adjust the width for the last column as needed */
+}
+
+.score-0{
+  color: black
+}
+
+.score-1 {
+  color: darkblue;
+}
+
+.score-2 {
+  color: blue;
+}
+
+.score-3 {
+  color: green;
+}
+
+.score-4 {
+  color: yellow;
+}
+
+.score-5 {
+  color: orange;
+}
+
+.score-6 {
+  color: red;
+}
+
+.loading-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+  width: 50px;
+  height: 50px;
+}
+
+.path {
+  stroke: #007bff;
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
